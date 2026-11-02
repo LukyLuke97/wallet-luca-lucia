@@ -2,35 +2,94 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
   <title>Luca & Lucia - Apple Wallet</title>
   <style>
     body {
-      background: #f8dce2;
-      color: #a01e30;
-      font-family: Arial, sans-serif;
+      margin: 0;
+      min-height: 100vh;
+      background: #F1E8D8;
+      color: #35271F;
+      font-family: Georgia, serif;
       text-align: center;
-      padding: 70px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    h1 { font-size: 36px; }
-    a {
+
+    main {
+      padding: 50px 22px;
+      max-width: 450px;
+    }
+
+    .foglie {
+      color: #53684B;
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
+
+    .data {
+      font-size: 13px;
+      letter-spacing: 3px;
+    }
+
+    h1 {
+      font-size: 44px;
+      font-weight: normal;
+      margin: 22px 0 10px;
+    }
+
+    .sposiamo {
+      font-size: 27px;
+      font-style: italic;
+    }
+
+    .dettagli {
+      margin: 36px 0;
+      line-height: 1.9;
+      font-size: 15px;
+    }
+
+    .pulsante {
       display: inline-block;
-      margin-top: 25px;
-      padding: 18px 25px;
-      background: #a01e30;
-      color: white;
+      padding: 18px 26px;
+      background: #53684B;
+      color: #FFFFFF;
+      border-radius: 12px;
       text-decoration: none;
-      border-radius: 14px;
+      font-family: Arial, sans-serif;
+      font-size: 15px;
       font-weight: bold;
+    }
+
+    .pulsante:hover {
+      background: #40523A;
     }
   </style>
 </head>
+
 <body>
-  <h1>Luca & Lucia ❤️</h1>
-  <p>9 ottobre 2027</p>
-  <p>Il nostro biglietto di prova</p>
-  <a href="Prova-Wallet.pkpass">
-    Aggiungi ad Apple Wallet
-  </a>
+  <main>
+    <div class="foglie">❧ 🌿 ❧</div>
+
+    <div class="data">9 OTTOBRE 2027</div>
+
+    <h1>Luca & Lucia</h1>
+    <div class="sposiamo">Ci sposiamo!</div>
+
+    <div class="dettagli">
+      <strong>CERIMONIA · 11:00</strong><br>
+      Duomo di Cittadella<br><br>
+
+      <strong>RICEVIMENTO · 14:00</strong><br>
+      Villa Caprera
+    </div>
+
+    <a class="pulsante"
+       href="Prova-Wallet.pkpass">
+      Aggiungi ad Apple Wallet
+    </a>
+  </main>
 </body>
 </html>
